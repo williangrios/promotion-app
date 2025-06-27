@@ -1,42 +1,34 @@
-// Testimonials.tsx
 'use client'
-import Slider from 'react-slick'
 
-const testimonials = [
-  {
-    name: 'Fernanda Silva',
-    feedback:
-      'Usei as cápsulas de energia e senti a diferença já no segundo dia: mais foco e disposição para o trabalho!',
-  },
-  {
-    name: 'Ricardo Almeida',
-    feedback:
-      'Os géis são extremamente práticos. Levo na bolsa e tomo a qualquer momento — perfeito para meu ritmo agitado.',
-  },
-  {
-    name: 'Mariana Costa',
-    feedback:
-      'Minha imunidade melhorou muito desde que comecei a tomar juntos cápsulas e géis. Nota 10 para o sabor também!',
-  },
-]
+import Slider from 'react-slick'
+import { envVariables } from '@/helpers/envVariables'
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-white text-gray-800">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">Depoimentos Reais</h2>
+    <section
+      className="py-20 px-6 text-white"
+      style={{
+        background: `linear-gradient(135deg, ${envVariables.PRIMARY_COLOR_DARK}, ${envVariables.PRIMARY_COLOR_MEDIUM})`,
+      }}
+    >
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-extrabold mb-10">Depoimentos Reais</h2>
         <Slider
           dots
           infinite
           speed={500}
           autoplay
-          autoplaySpeed={4000}
+          autoplaySpeed={5000}
           slidesToShow={1}
+          arrows={false}
         >
-          {testimonials.map((t, i) => (
-            <div key={i} className="p-6">
-              <p className="italic mb-4">“{t.feedback}”</p>
-              <p className="font-bold">{t.name}</p>
+          {envVariables.TESTIMONIALS.map((t, i) => (
+            <div
+              key={i}
+              className="p-6 bg-white/10 rounded-xl shadow-md backdrop-blur-sm"
+            >
+              <p className="italic text-lg mb-4">“{t.feedback}”</p>
+              <p className="font-bold text-xl text-yellow-300">{t.name}</p>
             </div>
           ))}
         </Slider>
