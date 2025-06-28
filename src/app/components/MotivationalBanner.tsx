@@ -9,8 +9,8 @@ export default function MotivationalBanner() {
 
   return (
     <section
-      className="py-16 px-6 text-white"
-      style={{ backgroundColor: envVariables.PRIMARY_COLOR_MEDIUM }}
+      className="py-16 px-2 text-white"
+      style={{ backgroundColor: envVariables.PRIMARY_COLOR_DARK }}
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Imagem do produto */}

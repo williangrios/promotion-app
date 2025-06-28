@@ -13,11 +13,11 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 shadow-md backdrop-blur"
+      className="fixed top-0 left-0 right-0 z-50 shadow-lg backdrop-blur"
       style={{
-        backgroundColor: envVariables.PRIMARY_COLOR_DARK,
+        backgroundColor: envVariables.PRIMARY_COLOR_ULTRA_DARK,
         color: '#fff',
-        borderBottom: `1px solid ${envVariables.SECONDARY_COLOR_LIGHT}33`, // transparência 20%
+        borderBottom: `1px solid ${envVariables.SECONDARY_COLOR_DARK}33`, // transparência 20%
       }}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">

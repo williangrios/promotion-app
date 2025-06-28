@@ -10,6 +10,7 @@ import PurchaseHighlights from './components/PurchaseHighlights'
 import MotivationalBanner from './components/MotivationalBanner'
 import VideoSection from './components/VideoSection'
 import MiniPaymentFooter from './components/MiniPaymentFooter'
+import Divisor from './components/Divisor'
 
 export default function Home() {
   return (
@@ -22,10 +23,9 @@ export default function Home() {
         <section id="benefits">
           <Features />
         </section>
+        <Divisor inverse/>
         <Testimonials />
-        <section id="highlights">
-          <PurchaseHighlights />
-        </section>
+        <Divisor />
         <section id="pricing">
           <PricingProduct />
         </section>

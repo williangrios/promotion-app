@@ -7,7 +7,7 @@ export default function Guarantee() {
   return (
     <section
       className="py-20 px-6 text-white"
-      style={{ backgroundColor: envVariables.PRIMARY_COLOR_LIGHT }}
+      style={{ backgroundColor: envVariables.PRIMARY_COLOR_DARK }}
     >
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <Image

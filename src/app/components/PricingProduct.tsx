@@ -5,7 +5,7 @@ import { envVariables } from '@/helpers/envVariables'
 export default function PricingProduct() {
   return (
     <section
-      className="py-20 text-center"
+      className="py-6 text-center"
       style={{ backgroundColor: envVariables.SECONDARY_COLOR_LIGHT, color: envVariables.SECONDARY_COLOR_DARK }}
     >
       <div className="max-w-6xl mx-auto px-6">

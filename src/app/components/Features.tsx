@@ -7,7 +7,10 @@ export default function Features() {
   return (
     <section
       className="py-20"
-      style={{ backgroundColor: envVariables.SECONDARY_COLOR_LIGHT, color: envVariables.SECONDARY_COLOR_DARK }}
+      style={{
+        backgroundColor: envVariables.SECONDARY_COLOR_LIGHT,
+        color: envVariables.SECONDARY_COLOR_DARK,
+      }}
     >
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center">
         <Image
@@ -21,25 +24,21 @@ export default function Features() {
           }}
         />
 
-        <h2 className="text-4xl font-extrabold text-center my-4">
-          Benefícios comprovados com {' '}
+        <h2 className="text-4xl font-extrabold text-center my-6 leading-tight">
+          Benefícios comprovados com{' '}
           <span style={{ color: envVariables.PRIMARY_COLOR_MEDIUM }}>
             {envVariables.PRODUCT_NAME}
-          </span>{' '}
+          </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full">
           {envVariables.FEATURES.map((feat, i) => (
             <div
               key={i}
-              className="p-6 rounded-xl shadow hover:shadow-md transition"
-              style={{
-                backgroundColor: '#ffffff',
-                color: envVariables.SECONDARY_COLOR_DARK,
-              }}
+              className="p-6 rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 bg-white transition-all duration-300 ease-in-out text-center"
             >
               <feat.icon
-                className="h-10 w-10 mb-4"
+                className="h-10 w-10 mb-4 mx-auto"
                 style={{ color: envVariables.PRIMARY_COLOR_MEDIUM }}
               />
               <h3 className="text-xl font-semibold mb-2">{feat.title}</h3>

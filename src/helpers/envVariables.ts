@@ -19,11 +19,12 @@ const _productName = 'Tesao de Touro'
 export const envVariables = {
   SITE_URL: 'www.tesaodetouro.com',
 
-  PRIMARY_COLOR_LIGHT: '#ff4d4f',
-  PRIMARY_COLOR_MEDIUM: '#d91f26',
+  PRIMARY_COLOR_LIGHT: '#b22222',
+  PRIMARY_COLOR_MEDIUM: '#a50000',
   PRIMARY_COLOR_DARK: '#8b0000',
+  PRIMARY_COLOR_ULTRA_DARK: '#4b0000' ,
 
-  SECONDARY_COLOR_LIGHT: '#f7c77e',
+  SECONDARY_COLOR_LIGHT: '#e0b64a',
   SECONDARY_COLOR_MEDIUM: '#c8a24b',
   SECONDARY_COLOR_DARK: '#3a3a3a',
 
@@ -59,12 +60,20 @@ export const envVariables = {
     subtitle: 'Suplementos de alta performance que elevam sua energia, confiança e desempenho em todos os momentos. Resultados reais e visíveis em até 7 dias ou seu dinheiro de volta.',
     buttonLabel: 'Quero Potência Máxima',
     buttonLink: '/#pricing',
-    image: {
-      src: '/produto-hero.png',
-      alt: 'Produto Tesão de Touro',
-      width: 400,
-      height: 400,
-    },
+    images: [
+      {
+        src: '/guarantee.png',
+        alt: 'Produto Tesão de Touro',
+        width: 400,
+        height: 400,
+      },
+      {
+        src: '/logo.jpg',
+        alt: 'Produto Tesão de Touro',
+        width: 400,
+        height: 400,
+      },
+    ]
   },
 
    HIGHLIGHTS: [
@@ -167,6 +176,7 @@ export const envVariables = {
   PRODUCTS: [
     {
       id: 'frasco1',
+      priceId: 'price_1OXiCyKEXAMPLE',
       title: '1 Frasco',
       description: 'Comece sua transformação. Ideal para quem quer experimentar o poder do Tesão de Touro.',
       features: ['30 cápsulas premium', 'Fórmula concentrada', 'Envio ultra-rápido e discreto'],
@@ -178,6 +188,7 @@ export const envVariables = {
     },
     {
       id: 'frasco3',
+      priceId: 'price_1OXiCyKEXAMPLE',
       title: '3 Frascos',
       description: 'A escolha inteligente para uso contínuo com ótimo custo-benefício.',
       features: ['90 cápsulas no total', 'Desconto progressivo', 'Frete grátis'],
@@ -189,13 +200,14 @@ export const envVariables = {
     },
     {
       id: 'frasco5',
+      priceId: 'price_1OXiCyKEXAMPLE',
       title: '5 Frascos + Brinde Exclusivo',
       description: 'Tratamento completo para resultados máximos com bônus especial incluso.',
       features: ['150 cápsulas', 'Brinde surpresa', 'Maior desconto e frete grátis'],
       price: 349.5,
       priceLabel: 'R$349,50',
       highlight: true,
-      cta: 'Quero Potência Total',
+      cta: 'Quero Potência Total + Economia',
       link: '/checkout?product=frasco5',
     },
   ],
@@ -335,4 +347,8 @@ export const envVariables = {
       },
     ],
   },
+  KEYWORDS: [
+    'encapsulados',
+    _productName,
+  ]
 }

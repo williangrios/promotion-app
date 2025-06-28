@@ -16,30 +16,21 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: envVariables.APP_NAME,
-  description: envVariables.APP_DESCRIPTION,
-  keywords: [
-    'educação infantil',
-    'app educacional',
-    'inteligência artificial',
-    'bloqueio inteligente',
-    'pais e filhos',
-    'estudos',
-    envVariables.APP_NAME,
-  ],
+  title: envVariables.PRODUCT_NAME,
+  description: envVariables.PRODUCT_DESCRIPTION,
+  keywords: envVariables.KEYWORDS,
   openGraph: {
-    title: envVariables.APP_NAME,
-    description:
-      'Ensine seus filhos antes de liberar o celular. Baixe agora o APK gratuitamente.',
+    title: envVariables.PRODUCT_NAME,
+    description:  envVariables.PRODUCT_DESCRIPTION,
     url: envVariables.SITE_URL,
     type: 'website',
     images: [
       {
-        url: '/logo.png',
+        url: envVariables.LOGO_IMAGE,
         width: 800,
         height: 600,
-        alt: envVariables.APP_NAME,
-      },
+        alt: envVariables.PRODUCT_NAME,
+      },  
     ],
   },
 }

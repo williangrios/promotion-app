@@ -1,37 +1,34 @@
 'use client'
 
+import { useSearchParams } from 'next/navigation'
 import { useState } from 'react'
 import Image from 'next/image'
 import { loadStripe } from '@stripe/stripe-js'
 import Guarantee from '../components/Guarantee'
 import FAQ from '../components/FAQ'
+import { envVariables } from '@/helpers/envVariables'
 
-// Carregando Stripe.js com sua Publishable Key
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 )
 
-const product = {
-  vitamina: {
-    title: 'Complexo Vitamínico',
-    description: 'Blend completo de vitaminas essenciais para o seu bem-estar',
-    price: 'R$49,90',
-    installment: 'ou 1x de R$49,90',
-    priceId: 'price_YOUR_STRIPE_PRICE_ID', // substitua aqui
-  },
-}
-
 export default function CheckoutPage() {
+  const searchParams = useSearchParams()
+  const selectedProductId = searchParams.get('product') || 'frasco1'
+  const selectedProduct = envVariables.PRODUCTS.find(
+    (p) => p.id === selectedProductId
+  )
+
   const [loading, setLoading] = useState(false)
-  const plan = product.vitamina
 
   const handleCheckout = async () => {
+    if (!selectedProduct) return
     setLoading(true)
     try {
       const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId: plan.priceId }),
+        body: JSON.stringify({ priceId: selectedProduct.priceId }),
       })
       const { sessionId } = await res.json()
       if (sessionId) {
@@ -49,19 +46,31 @@ export default function CheckoutPage() {
     }
   }
 
+  if (!selectedProduct) {
+    return (
+      <section className="min-h-screen flex items-center justify-center text-white bg-slate-900">
+        <p>Produto inválido. Verifique o link de compra.</p>
+      </section>
+    )
+  }
+
   return (
-    <section className="min-h-screen mt-20 bg-slate-900 text-white flex flex-col w-full items-center justify-center p-6">
-      <div className="w-full bg-white text-gray-900 rounded-xl shadow-xl p-8">
+    <section className="min-h-screen mt-20 text-white flex flex-col w-full items-center justify-center py-6" style={{ backgroundColor: envVariables.SECONDARY_COLOR_MEDIUM }}>
+      <div className="w-full max-w-2xl bg-white text-gray-900 rounded-xl shadow-xl p-8">
         <h1 className="text-3xl font-bold text-center mb-4">
-          Adquira Seu {plan.title}
+          Adquira seu {selectedProduct.title}
         </h1>
-        <p className="text-center text-gray-600 mb-6">{plan.description}</p>
+        <p className="text-center text-gray-600 mb-6">
+          {selectedProduct.description}
+        </p>
 
         <div className="border border-gray-300 rounded-lg p-6 mb-6">
           <div className="flex justify-between items-center">
             <div>
-              <p className="text-2xl font-extrabold">{plan.price}</p>
-              <p className="text-sm text-gray-500">{plan.installment}</p>
+              <p className="text-2xl font-extrabold">
+                {selectedProduct.priceLabel}
+              </p>
+              <p className="text-sm text-gray-500">Pagamento único</p>
             </div>
             <Image
               src="/vitamina.png"
