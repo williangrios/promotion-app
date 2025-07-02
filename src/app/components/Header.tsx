@@ -2,9 +2,8 @@
 
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
-import Image from 'next/image'
 import { envVariables } from '@/helpers/envVariables'
+import Banner from './Banner'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,19 +20,7 @@ export default function Header() {
       }}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          <Image
-            src={envVariables.LOGO_IMAGE}
-            alt="Logo"
-            width={200}
-            height={70}
-            className="rounded-lg border-2 shadow-lg"
-            style={{
-              borderColor: envVariables.PRIMARY_COLOR_MEDIUM,
-            }}
-          />
-        </Link>
-
+        <Banner />
         {/* Navegação Desktop */}
         <nav className="hidden md:flex gap-8">
           {envVariables.NAV_ITEMS.map((item) => (

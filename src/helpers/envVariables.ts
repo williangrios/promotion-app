@@ -13,23 +13,23 @@ import {
 import { BiPackage } from 'react-icons/bi'
 import { MdNature } from 'react-icons/md'
 
-const _emailSupport = 'tesaodetouro@gmail.com'
-const _productName = 'Tesao de Touro'
+const _emailSupport = 'suporte@alphamanpower.com'
+const _productName = 'AlphaMan'
 
 export const envVariables = {
-  SITE_URL: 'www.tesaodetouro.com',
+  SITE_URL: 'www.alphamanpower.com',
 
-  PRIMARY_COLOR_LIGHT: '#b22222',
-  PRIMARY_COLOR_MEDIUM: '#a50000',
-  PRIMARY_COLOR_DARK: '#8b0000',
-  PRIMARY_COLOR_ULTRA_DARK: '#4b0000' ,
+  PRIMARY_COLOR_LIGHT: '#002b36',        // azul profundo claro
+  PRIMARY_COLOR_MEDIUM: '#001f29',       // azul mais escuro
+  PRIMARY_COLOR_DARK: '#00141d',         // quase preto com tom azulado
+  PRIMARY_COLOR_ULTRA_DARK: '#000a10',   // preto absoluto azulado
 
-  SECONDARY_COLOR_LIGHT: '#e0b64a',
-  SECONDARY_COLOR_MEDIUM: '#c8a24b',
-  SECONDARY_COLOR_DARK: '#3a3a3a',
+    SECONDARY_COLOR_LIGHT: '#8b4c2a',      // cobre queimado claro
+    SECONDARY_COLOR_MEDIUM: '#6e3920',     // cobre médio envelhecido
+    SECONDARY_COLOR_DARK: '#4a2415', 
 
   PRODUCT_NAME: _productName,
-  PRODUCT_DESCRIPTION: 'Tesão de Touro - Potência, vitalidade e desejo sem limites.',
+  PRODUCT_DESCRIPTION: 'AlphaMan - Potência, Confiança e Energia para Homens que Dominam.',
 
   PHONE_SUPPORT: '',
   SOCIAL_WHATSAPP: '37988083717',
@@ -37,7 +37,7 @@ export const envVariables = {
   EMAIL_HOST: 'smtp.gmail.com',
   EMAIL_PORT: '587',
   EMAIL_USER: _emailSupport,
-  EMAIL_PASS: 'atgkoozhrtxngudu',
+  EMAIL_PASS: 'senha_segura_aqui',
   EMAIL_SUPPORT: _emailSupport,
 
   SOCIAL_YOUTUBE: '',
@@ -46,221 +46,199 @@ export const envVariables = {
 
   NAV_ITEMS: [
     { name: 'Benefícios', href: '/#benefits' },
-    { name: 'Preços', href: '/#pricing' },
+    { name: 'Planos', href: '/#pricing' },
   ],
 
   HEADER_BG_COLOR: '#0f172a',
   HEADER_TEXT_COLOR: '#ffffff',
   HEADER_HOVER_COLOR: '#fbbf24',
   HEADER_BORDER_COLOR: 'rgba(255,255,255,0.1)',
-  LOGO_IMAGE: '/banner.jpg',
+  LOGO_IMAGE: '/logo.png',
 
   HERO: {
-    title: 'Desperte Sua Potência com Tesão de Touro',
-    subtitle: 'Suplementos de alta performance que elevam sua energia, confiança e desempenho em todos os momentos. Resultados reais e visíveis em até 7 dias ou seu dinheiro de volta.',
-    buttonLabel: 'Quero Potência Máxima',
+    title: 'Desperte o Homem Alpha que Existe em Você',
+    subtitle: 'AlphaMan é o suplemento definitivo para homens que querem dominar sua energia, sua libido e sua confiança. Resultados visíveis em até 7 dias ou seu dinheiro de volta.',
+    buttonLabel: 'Quero Ser Alpha Agora',
     buttonLink: '/#pricing',
     images: [
       {
-        src: '/guarantee.png',
-        alt: 'Produto Tesão de Touro',
+        src: '/garantia-alpha.png',
+        alt: 'Selo de garantia AlphaMan',
         width: 400,
         height: 400,
       },
       {
-        src: '/logo.jpg',
-        alt: 'Produto Tesão de Touro',
+        src: '/produto-alpha.png',
+        alt: 'Frasco do AlphaMan',
         width: 400,
         height: 400,
       },
-    ]
+    ],
   },
 
-   HIGHLIGHTS: [
+  HIGHLIGHTS: [
     {
       icon: TruckIcon,
-      title: 'Entregamos',
-      subtitle: 'Para todo o Brasil!',
+      title: 'Envio Rápido e Discreto',
+      subtitle: 'Para todo o Brasil',
     },
     {
       icon: CreditCardIcon,
-      title: 'Pague com cartão',
-      subtitle: 'em até 12x',
+      title: 'Parcelamento Seguro',
+      subtitle: 'em até 12x no cartão',
     },
     {
       icon: BiPackage,
-      title: 'Frete grátis',
+      title: 'Frete Grátis',
       subtitle: 'em qualquer pedido!',
     },
     {
       icon: LockClosedIcon,
-      title: 'Compra segura',
-      subtitle: 'Site blindado!',
+      title: 'Checkout Blindado',
+      subtitle: '100% Protegido',
     },
   ],
 
   MOTIVATIONAL_BANNER: {
-    title: 'Transforme sua energia. Desperte o seu máximo potencial!',
+    title: 'Performance não se pede, se conquista. Torne-se Alpha!',
     paragraphs: [
-      'Sente que sua disposição anda em baixa? Isso pode ser um sinal de que seu corpo precisa de um reforço real. O Tesão de Touro foi desenvolvido com ativos potentes e naturais que ajudam a recuperar sua vitalidade, força e desempenho em poucos dias.',
-      'Com uma fórmula que ativa sua energia desde a primeira semana, nosso suplemento combate o cansaço físico e mental, estimula naturalmente a produção de testosterona e melhora seu foco e confiança.',
-      'Milhares de brasileiros já aprovaram! Chegou sua vez de tomar o controle da sua performance e viver com mais potência e satisfação.',
+      'Está cansado da falta de energia, desejo ou foco? AlphaMan chegou para mudar isso. Com ativos naturais e poderosos, você recupera sua vitalidade, libido e confiança em poucos dias.',
+      'Sinta o verdadeiro controle da sua potência masculina: energia para o dia, desempenho para a noite. Resultados reais, seguros e comprovados por milhares de homens.',
+      'Este não é apenas mais um suplemento. É um estilo de vida. Seja o Alfa. Seja o protagonista da sua vida.',
     ],
     cta: {
       label: 'COMPRE AGORA',
       link: '/#pricing',
     },
     image: {
-      src: '/produto-motivacional.png',
-      alt: `Imagem motivacional com produto ${_productName}`,
+      src: '/1frasco.png',
+      alt: `Banner com produto ${_productName}`,
       width: 450,
       height: 450,
     },
   },
+
   VIDEO_SECTION: {
-    title: `Descubra como o ${_productName} transforma sua vida`,
-    subtitle: 'Assista ao vídeo completo e veja os benefícios reais para energia, libido e desempenho.',
-    youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // vídeo temporário
+    title: `Veja como ${_productName} Está Transformando Homens`,
+    subtitle: 'Assista ao vídeo e entenda como recuperar sua energia, seu desejo e sua confiança.',
+    youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
+
   FEATURES: [
     {
-      title: 'Explosão de Energia e Disposição',
-      desc: 'Ative o melhor do seu corpo e mente com nossa fórmula intensiva. Sinta-se mais forte, ativo e produtivo todos os dias.',
+      title: 'Explosão de Energia e Força Masculina',
+      desc: 'Sinta-se mais forte, disposto e com garra para vencer todos os desafios do dia a dia.',
       icon: BoltIcon,
     },
     {
-      title: 'Libido em Alta',
-      desc: 'Ingredientes afrodisíacos naturais que reacendem o desejo e melhoram sua performance nas relações.',
+      title: 'Desejo em Alta Potência',
+      desc: 'Recupere seu apetite sexual com ingredientes afrodisíacos cientificamente comprovados.',
       icon: FireIcon,
     },
     {
-      title: 'Desempenho Potente',
-      desc: 'Tenha ereções mais rígidas e duradouras com vasodilatação avançada e fluxo sanguíneo otimizado.',
+      title: 'Potência Sexual Aumentada',
+      desc: 'Maior fluxo sanguíneo para ereções mais rígidas, duradouras e confiantes.',
       icon: ShieldCheckIcon,
     },
     {
-      title: '100% Natural e Seguro',
-      desc: 'Composto por extratos poderosos como maca peruana, tribulus e ginseng. Sem efeitos colaterais, apenas benefícios.',
+      title: 'Fórmula 100% Natural',
+      desc: 'Com maca peruana, tribulus terrestris, ginseng e L-arginina. Sem efeitos colaterais.',
       icon: MdNature,
     },
     {
-      title: 'Resultados Rápidos e Comprovados',
-      desc: 'Milhares já comprovaram: em menos de 7 dias, você sente a diferença. Efeito contínuo com uso regular.',
+      title: 'Resultados Visíveis em 7 Dias',
+      desc: 'Alta absorção, efeito progressivo e seguro desde a primeira semana.',
       icon: SparklesIcon,
     },
     {
-      title: 'Confiança de Quem Já Usa',
-      desc: 'Com mais de 5.000 clientes fiéis, temos orgulho de fazer parte da sua evolução pessoal e bem-estar.',
+      title: 'Homens Reais, Resultados Reais',
+      desc: 'Mais de 10.000 homens aprovaram. Junte-se a eles.',
       icon: UserGroupIcon,
     },
   ],
 
   STATS: [
-    {
-      value: '5.000+',
-      label: 'Clientes Satisfeitos',
-      icon: UserGroupIcon,
-    },
-    {
-      value: '10.000+',
-      label: 'Unidades Vendidas',
-      icon: ChartBarIcon,
-    },
-    {
-      value: '98%',
-      label: 'Aprovação Garantida',
-      icon: AcademicCapIcon,
-    },
+    { value: '10.000+', label: 'Clientes Transformados', icon: UserGroupIcon },
+    { value: '25.000+', label: 'Frascos Vendidos', icon: ChartBarIcon },
+    { value: '97%', label: 'Satisfacão Garantida', icon: AcademicCapIcon },
   ],
 
   PRODUCTS: [
     {
       id: 'frasco1',
-      priceId: 'price_1OXiCyKEXAMPLE',
       title: '1 Frasco',
-      description: 'Comece sua transformação. Ideal para quem quer experimentar o poder do Tesão de Touro.',
-      features: ['30 cápsulas premium', 'Fórmula concentrada', 'Envio ultra-rápido e discreto'],
+      description: 'Ideal para quem quer experimentar o poder do AlphaMan.',
+      features: ['30 cápsulas', 'Alta concentração', 'Entrega discreta'],
       price: 89.9,
       priceLabel: 'R$89,90',
       highlight: false,
-      cta: 'Quero Começar',
-      link: '/checkout?product=frasco1',
+      cta: 'Quero Testar',
+      link: 'https://app.monetizze.com.br/checkout/ALPHA1FRASCO',
     },
     {
       id: 'frasco3',
-      priceId: 'price_1OXiCyKEXAMPLE',
       title: '3 Frascos',
-      description: 'A escolha inteligente para uso contínuo com ótimo custo-benefício.',
-      features: ['90 cápsulas no total', 'Desconto progressivo', 'Frete grátis'],
+      description: 'Plano ideal para 90 dias de uso e resultados constantes.',
+      features: ['90 cápsulas', 'Desconto especial', 'Frete grátis'],
       price: 239.7,
       priceLabel: 'R$239,70',
       highlight: false,
-      cta: 'Quero Economia',
-      link: '/checkout?product=frasco3',
+      cta: 'Quero Economizar',
+      link: 'https://app.monetizze.com.br/checkout/ALPHA3FRASCOS',
     },
     {
       id: 'frasco5',
-      priceId: 'price_1OXiCyKEXAMPLE',
       title: '5 Frascos + Brinde Exclusivo',
-      description: 'Tratamento completo para resultados máximos com bônus especial incluso.',
-      features: ['150 cápsulas', 'Brinde surpresa', 'Maior desconto e frete grátis'],
+      description: 'Kit Alpha definitivo com presente surpresa e o melhor custo-benefício.',
+      features: ['150 cápsulas', 'Frete grátis', 'Brinde especial'],
       price: 349.5,
       priceLabel: 'R$349,50',
       highlight: true,
-      cta: 'Quero Potência Total + Economia',
-      link: '/checkout?product=frasco5',
+      cta: 'Quero Potência Total',
+      link: 'https://app.monetizze.com.br/checkout/ALPHA5FRASCOS',
     },
   ],
 
   TESTIMONIALS: [
     {
-      name: 'Fernanda Silva',
-      feedback:
-        'Senti o efeito em poucos dias. Muito mais energia e disposição no meu dia. Recomendo com confiança!',
+      name: 'Carlos Henrique',
+      feedback: 'Eu me sinto outro homem. Energia, foco e desejo nas alturas. AlphaMan é top!',
     },
     {
-      name: 'Ricardo Almeida',
-      feedback:
-        'Produto prático e eficiente. Levo no bolso e uso quando preciso. Minha rotina mudou completamente.',
+      name: 'João Batista',
+      feedback: 'Voltei a ter confiança na cama e no trabalho. Recomendo demais.',
     },
     {
-      name: 'Mariana Costa',
-      feedback:
-        'O melhor suplemento que já experimentei! Corpo mais forte, mente mais ativa e libido nas alturas.',
+      name: 'Renato Lopes',
+      feedback: 'Produto incrível. Resultados em menos de uma semana. Não largo mais!',
     },
   ],
 
   FAQ: [
     {
       question: 'Quais os principais benefícios?',
-      answer: `Mais energia, libido elevada, disposição e foco. Tesão de Touro é ideal para quem busca desempenho e confiança.`,
+      answer: 'Energia, libido, potência sexual e foco. Tudo com ingredientes naturais e seguros.',
     },
     {
       question: 'Como devo tomar?',
-      answer:
-        'Apenas 1 cápsula por dia, preferencialmente pela manhã. Os resultados aumentam com o uso contínuo.',
+      answer: '1 cápsula por dia pela manhã. Em dias especiais, pode tomar 1 extra 30 minutos antes da relação.',
     },
     {
-      question: 'É seguro?',
-      answer:
-        'Sim. A fórmula é 100% natural, testada e aprovada. Sem efeitos colaterais e sem riscos para sua saúde.',
+      question: 'O AlphaMan é seguro?',
+      answer: 'Sim. A fórmula é 100% natural e sem efeitos colaterais. Liberado pela ANVISA.',
     },
     {
       question: 'Tem garantia?',
-      answer:
-        'Claro! Garantia de satisfação total: se não gostar, devolvemos 100% do valor em até 7 dias.',
+      answer: 'Garantia de 7 dias. Se não gostar, devolvemos seu dinheiro sem perguntas.',
     },
     {
-      question: 'Qual o prazo de entrega?',
-      answer:
-        'Postagem em até 24h úteis. Prazo médio de 3 a 5 dias úteis para todo o Brasil com frete discreto.',
+      question: 'O envio é discreto?',
+      answer: 'Sim! Enviamos em embalagem neutra e protegida. Ninguém saberá o conteúdo.',
     },
   ],
 
-  GUARANTEE_TEXT:
-    'Garantia Total de Satisfação: use por até 7 dias. Se não perceber diferença, devolvemos todo o seu dinheiro sem complicações.',
-
-  PRIVACY_POLICY: {
+  GUARANTEE_TEXT: 'Use AlphaMan por 7 dias. Se não perceber mudança, devolvemos todo o valor. Garantia total de satisfação.',
+ PRIVACY_POLICY: {
     lastUpdated: '18 de Junho de 2025',
     title: 'Política de Privacidade',
     intro: `A sua privacidade é importante para nós. Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações dos usuários do site/app ${_productName}, especializado na venda de suplementos encapsulados e géis vitamínicos. Ao realizar compras, você concorda com as práticas descritas neste documento.`,
@@ -350,5 +328,9 @@ export const envVariables = {
   KEYWORDS: [
     'encapsulados',
     _productName,
-  ]
+    'suplemento masculino',
+    'potência sexual',
+    'testosterona natural',
+    'produto para libido',
+  ],
 }

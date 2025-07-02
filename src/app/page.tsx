@@ -4,12 +4,9 @@ import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Guarantee from './components/Guarantee'
 import Stats from './components/Stats'
-import Contact from './components/Contact'
 import PricingProduct from './components/PricingProduct'
-import PurchaseHighlights from './components/PurchaseHighlights'
 import MotivationalBanner from './components/MotivationalBanner'
 import VideoSection from './components/VideoSection'
-import MiniPaymentFooter from './components/MiniPaymentFooter'
 import Divisor from './components/Divisor'
 
 export default function Home() {
@@ -35,11 +32,10 @@ export default function Home() {
         <section id="banner">
           <MotivationalBanner />
         </section>
-        <section id="contact">
+        {/* <section id="contact">
           <Contact />
-        </section>
+        </section> */}
         <Guarantee />
-        <MiniPaymentFooter />
         <FAQ />
       </main>
     </>

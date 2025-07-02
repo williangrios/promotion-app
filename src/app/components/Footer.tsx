@@ -1,7 +1,8 @@
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import DefaultLink from './DefaultLink'
 import { envVariables } from '@/helpers/envVariables'
-import Image from 'next/image'
+import MiniPaymentFooter from './MiniPaymentFooter'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -12,14 +13,25 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo + mídias */}
         <div className="flex flex-col items-center">
-          <Image
-            src="/logo.jpg"
-            alt={`${envVariables.PRODUCT_NAME} Logo`}
-            width={100}
-            height={100}
-            className="rounded-full border-2 shadow-lg"
-            style={{ borderColor: envVariables.PRIMARY_COLOR_LIGHT }}
-          />
+          <Logo />
+          <h3
+              className="text-lg font-extrabold select-none"
+              style={{
+                background: `linear-gradient(45deg, ${envVariables.SECONDARY_COLOR_LIGHT}, ${envVariables.SECONDARY_COLOR_MEDIUM}, ${envVariables.SECONDARY_COLOR_DARK})`,
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                // Removi text-shadow que borrava
+                // Mantive uma sombra sutil mas mais definida com drop-shadow menor e menos blur
+                filter: `
+                  drop-shadow(0 0 1px rgba(0, 0, 0, 0.5))
+                `,
+                // Aumentar contraste com font-weight extra bold (já está) e um leve outline com text stroke
+                // textStroke: `1px ${envVariables.SECONDARY_COLOR_DARK}`, // só funciona no Firefox, pra outros pode usar -webkit-text-stroke
+                WebkitTextStroke: `0.8px ${envVariables.SECONDARY_COLOR_DARK}`,
+              }}
+            >
+              ALPHAMAN
+            </h3>
           <div className="flex gap-4 mt-4">
             {envVariables.SOCIAL_YOUTUBE && (
               <DefaultLink
@@ -92,7 +104,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
+        <MiniPaymentFooter />
       <div className="text-center text-xs mt-10 text-white/70">
         <p>
           &copy; {new Date().getFullYear()} {envVariables.PRODUCT_NAME}. Todos os
