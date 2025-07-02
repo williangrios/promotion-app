@@ -34,7 +34,7 @@ export class EmailService {
     const content = `
       <h2 style="color: #0f172a;">Olá,</h2>
       <p style="font-size: 16px; color: #1e293b;">
-        Você solicitou uma nova senha de acesso ao <strong>${envVariables.APP_NAME}</strong>.
+        Você solicitou uma nova senha de acesso ao <strong>${envVariables.PRODUCT_NAME}</strong>.
       </p>
       <p style="font-size: 16px; color: #1e293b;">
         Use a nova senha abaixo para fazer login no aplicativo:
@@ -50,9 +50,9 @@ export class EmailService {
     `
 
     await this.transporter.sendMail({
-      from: `"${envVariables.APP_NAME}" <${envVariables.EMAIL_USER}>`,
+      from: `"${envVariables.PRODUCT_NAME}" <${envVariables.EMAIL_USER}>`,
       to: email,
-      subject: `Nova senha gerada para ${envVariables.APP_NAME} 🦉`,
+      subject: `Nova senha gerada para ${envVariables.PRODUCT_NAME} 🦉`,
       html: this._wrapEmailContent(content),
     })
   }
@@ -63,7 +63,7 @@ export class EmailService {
     const content = `
       <h2 style="color: #0f172a;">Bem-vindo!</h2>
       <p style="font-size: 16px; color: #1e293b;">
-        Obrigado por fazer parte do grupo <strong>${envVariables.APP_NAME} 🦉</strong>.
+        Obrigado por fazer parte do grupo <strong>${envVariables.PRODUCT_NAME} 🦉</strong>.
       </p>
       <p style="font-size: 16px; color: #1e293b;">
         Seu código de ativação é:
@@ -79,9 +79,9 @@ export class EmailService {
     `
 
     await this.transporter.sendMail({
-      from: `"${envVariables.APP_NAME}" <${envVariables.EMAIL_USER}>`,
+      from: `"${envVariables.PRODUCT_NAME}" <${envVariables.EMAIL_USER}>`,
       to: email,
-      subject: `Bem-vindo ao ${envVariables.APP_NAME} 🦉`,
+      subject: `Bem-vindo ao ${envVariables.PRODUCT_NAME} 🦉`,
       html: this._wrapEmailContent(content),
     })
 
@@ -103,7 +103,7 @@ export class EmailService {
   private _generateEmailFooter(): string {
     return `
       <div style="text-align: center; font-size: 13px; color: #94a3b8;">
-        <p><strong>${envVariables.APP_NAME} 🦉</strong></p>
+        <p><strong>${envVariables.PRODUCT_NAME} 🦉</strong></p>
         <p>
           <a href="${envVariables.SITE_URL}" target="_blank" rel="noopener" style="color: #0ea5e9; text-decoration: underline; cursor: pointer;">
             ${envVariables.SITE_URL}

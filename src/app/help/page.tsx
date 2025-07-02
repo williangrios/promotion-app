@@ -15,7 +15,7 @@ export default function PageHelp() {
       <section className="space-y-8 text-base leading-relaxed">
         <p>
           Bem-vindo à Central de Ajuda do{' '}
-          <strong>{envVariables.APP_NAME}</strong>. Aqui você encontra respostas
+          <strong>{envVariables.PRODUCT_NAME}</strong>. Aqui você encontra respostas
           para dúvidas sobre nossos suplementos encapsulados e géis vitamínicos,
           pedidos, pagamentos e suporte.
         </p>
