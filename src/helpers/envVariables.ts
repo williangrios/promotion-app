@@ -49,7 +49,7 @@ export const envVariables = {
   NAV_ITEMS: [
     { name: 'Home', href: '/' },
     { name: 'Benefícios', href: '/#benefits' },
-    { name: 'Dúvidas', href: '/#stats' },
+    { name: 'Fórumla', href: '/#formula' },
   ],
 
   // Cabeçalho coerente com o azul/dourado
