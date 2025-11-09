@@ -13,23 +13,25 @@ import {
 import { BiPackage } from 'react-icons/bi'
 import { MdNature } from 'react-icons/md'
 
-const _emailSupport = 'suporte@alphamanpower.com'
-const _productName = 'AlphaMan'
+const _emailSupport = 'suporte@testopremium.com.br'
+const _productName = 'TestoPremium'
 
 export const envVariables = {
-  SITE_URL: 'www.alphamanpower.com',
+  SITE_URL: 'www.testopremium.com.br',
 
-  PRIMARY_COLOR_LIGHT: '#002b36',        // azul profundo claro
-  PRIMARY_COLOR_MEDIUM: '#001f29',       // azul mais escuro
-  PRIMARY_COLOR_DARK: '#00141d',         // quase preto com tom azulado
-  PRIMARY_COLOR_ULTRA_DARK: '#000a10',   // preto absoluto azulado
+  // Paleta alinhada aos frascos: azul profundo + dourado premium
+  PRIMARY_COLOR_LIGHT: '#1E2A39',
+  PRIMARY_COLOR_MEDIUM: '#16202B',
+  PRIMARY_COLOR_DARK: '#0F1520',
+  PRIMARY_COLOR_ULTRA_DARK: '#0A0F18',
 
-    SECONDARY_COLOR_LIGHT: '#8b4c2a',      // cobre queimado claro
-    SECONDARY_COLOR_MEDIUM: '#6e3920',     // cobre médio envelhecido
-    SECONDARY_COLOR_DARK: '#4a2415', 
+  SECONDARY_COLOR_LIGHT: '#E6C766',
+  SECONDARY_COLOR_MEDIUM: '#C9A938',
+  SECONDARY_COLOR_DARK: '#8A7420',
 
   PRODUCT_NAME: _productName,
-  PRODUCT_DESCRIPTION: 'AlphaMan - Potência, Confiança e Energia para Homens que Dominam.',
+  PRODUCT_DESCRIPTION:
+    'TestoPremium — suplemento masculino premium para apoio à energia, disposição e vitalidade. Rotina simples: 2 cápsulas ao dia.',
 
   PHONE_SUPPORT: '',
   SOCIAL_WHATSAPP: '37988083717',
@@ -45,31 +47,34 @@ export const envVariables = {
   SOCIAL_FACEBOOK: '',
 
   NAV_ITEMS: [
+    { name: 'Home', href: '/' },
     { name: 'Benefícios', href: '/#benefits' },
-    { name: 'Planos', href: '/#pricing' },
+    { name: 'Dúvidas', href: '/#stats' },
   ],
 
-  HEADER_BG_COLOR: '#0f172a',
-  HEADER_TEXT_COLOR: '#ffffff',
-  HEADER_HOVER_COLOR: '#fbbf24',
-  HEADER_BORDER_COLOR: 'rgba(255,255,255,0.1)',
+  // Cabeçalho coerente com o azul/dourado
+  HEADER_BG_COLOR: '#0F1520',
+  HEADER_TEXT_COLOR: '#FFFFFF',
+  HEADER_HOVER_COLOR: '#E6C766',
+  HEADER_BORDER_COLOR: 'rgba(255,255,255,0.08)',
   LOGO_IMAGE: '/logo.png',
 
   HERO: {
-    title: 'Desperte o Homem Alpha que Existe em Você',
-    subtitle: 'AlphaMan é o suplemento definitivo para homens que querem dominar sua energia, sua libido e sua confiança. Resultados visíveis em até 7 dias ou seu dinheiro de volta.',
-    buttonLabel: 'Quero Ser Alpha Agora',
+    title: 'Potência premium para o seu dia a dia',
+    subtitle:
+      'Mais energia, foco e vitalidade com uma combinação de ingredientes selecionados. TestoPremium é prático: 2 cápsulas ao dia.',
+    buttonLabel: 'Quero o meu TestoPremium',
     buttonLink: '/#pricing',
     images: [
       {
-        src: '/garantia-alpha.png',
-        alt: 'Selo de garantia AlphaMan',
-        width: 400,
-        height: 400,
+        src: '/imghero1.png',
+        alt: 'TestoPremium',
+        width: 500,
+        height: 500,
       },
       {
-        src: '/produto-alpha.png',
-        alt: 'Frasco do AlphaMan',
+        src: '/imghero2.png',
+        alt: 'Frasco do TestoPremium',
         width: 400,
         height: 400,
       },
@@ -79,194 +84,217 @@ export const envVariables = {
   HIGHLIGHTS: [
     {
       icon: TruckIcon,
-      title: 'Envio Rápido e Discreto',
+      title: 'Envio rápido e discreto',
       subtitle: 'Para todo o Brasil',
     },
     {
       icon: CreditCardIcon,
-      title: 'Parcelamento Seguro',
+      title: 'Parcelamento seguro',
       subtitle: 'em até 12x no cartão',
     },
     {
       icon: BiPackage,
-      title: 'Frete Grátis',
-      subtitle: 'em qualquer pedido!',
+      title: 'Frete grátis',
+      subtitle: 'em pedidos selecionados',
     },
     {
       icon: LockClosedIcon,
-      title: 'Checkout Blindado',
-      subtitle: '100% Protegido',
+      title: 'Checkout blindado',
+      subtitle: 'Ambiente 100% protegido',
     },
   ],
 
   MOTIVATIONAL_BANNER: {
-    title: 'Performance não se pede, se conquista. Torne-se Alpha!',
+    title: 'Alta performance nasce de uma boa rotina.',
     paragraphs: [
-      'Está cansado da falta de energia, desejo ou foco? AlphaMan chegou para mudar isso. Com ativos naturais e poderosos, você recupera sua vitalidade, libido e confiança em poucos dias.',
-      'Sinta o verdadeiro controle da sua potência masculina: energia para o dia, desempenho para a noite. Resultados reais, seguros e comprovados por milhares de homens.',
-      'Este não é apenas mais um suplemento. É um estilo de vida. Seja o Alfa. Seja o protagonista da sua vida.',
+      'Energia e disposição para o trabalho, treinos e vida a dois — em uma fórmula premium com maca peruana, tribulus, ginseng, L-arginina, zinco e vitamina B6.',
+      'Posologia simples e constante: 2 cápsulas ao dia para efeito cumulativo. Fácil de inserir na rotina e manter resultados.',
+      'Qualidade e transparência em cada frasco. Design e experiência pensados para o homem que exige mais de si mesmo.',
     ],
     cta: {
-      label: 'COMPRE AGORA',
+      label: 'COMPRAR AGORA',
       link: '/#pricing',
     },
     image: {
-      src: '/1frasco.png',
-      alt: `Banner com produto ${_productName}`,
+      src: '/testochart.png',
+      alt: `testosterona chart`,
       width: 450,
       height: 450,
     },
   },
 
   VIDEO_SECTION: {
-    title: `Veja como ${_productName} Está Transformando Homens`,
-    subtitle: 'Assista ao vídeo e entenda como recuperar sua energia, seu desejo e sua confiança.',
+    title: `Veja o ${_productName} em ação`,
+    subtitle:
+      'Como a rotina de 2 cápsulas ao dia pode apoiar sua energia, foco e vitalidade.',
     youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
 
   FEATURES: [
     {
-      title: 'Explosão de Energia e Força Masculina',
-      desc: 'Sinta-se mais forte, disposto e com garra para vencer todos os desafios do dia a dia.',
+      title: 'Energia e disposição',
+      desc: 'Sinta-se preparado para o dia com uma combinação de ingredientes selecionados.',
       icon: BoltIcon,
     },
     {
-      title: 'Desejo em Alta Potência',
-      desc: 'Recupere seu apetite sexual com ingredientes afrodisíacos cientificamente comprovados.',
+      title: 'Vitalidade masculina',
+      desc: 'Apoio nutricional pensado para a rotina do homem moderno.',
       icon: FireIcon,
     },
     {
-      title: 'Potência Sexual Aumentada',
-      desc: 'Maior fluxo sanguíneo para ereções mais rígidas, duradouras e confiantes.',
+      title: 'Confiança no desempenho',
+      desc: 'L-arginina e extratos tradicionais para suporte ao fluxo e à resistência.',
       icon: ShieldCheckIcon,
     },
     {
-      title: 'Fórmula 100% Natural',
-      desc: 'Com maca peruana, tribulus terrestris, ginseng e L-arginina. Sem efeitos colaterais.',
+      title: 'Ativos de origem natural',
+      desc: 'Maca peruana, tribulus terrestris, panax ginseng, muira puama, gengibre, zinco e vitamina B6.',
       icon: MdNature,
     },
     {
-      title: 'Resultados Visíveis em 7 Dias',
-      desc: 'Alta absorção, efeito progressivo e seguro desde a primeira semana.',
+      title: 'Uso prático',
+      desc: '2 cápsulas ao dia — rotina simples, efeito cumulativo.',
       icon: SparklesIcon,
     },
     {
-      title: 'Homens Reais, Resultados Reais',
-      desc: 'Mais de 10.000 homens aprovaram. Junte-se a eles.',
+      title: 'Aprovado pelos clientes',
+      desc: 'Alta aceitação e recompra entre usuários.',
       icon: UserGroupIcon,
     },
   ],
 
   STATS: [
-    { value: '10.000+', label: 'Clientes Transformados', icon: UserGroupIcon },
-    { value: '25.000+', label: 'Frascos Vendidos', icon: ChartBarIcon },
-    { value: '97%', label: 'Satisfacão Garantida', icon: AcademicCapIcon },
+    { value: '10.000+', label: 'Clientes atendidos', icon: UserGroupIcon },
+    { value: '25.000+', label: 'Frascos vendidos', icon: ChartBarIcon },
+    { value: '97%', label: 'Satisfação geral', icon: AcademicCapIcon },
   ],
 
   PRODUCTS: [
     {
       id: 'frasco1',
       title: '1 Frasco',
-      description: 'Ideal para quem quer experimentar o poder do AlphaMan.',
-      features: ['30 cápsulas', 'Alta concentração', 'Entrega discreta'],
+      img: '/1frasco.png',
+      description: '30 dias de uso — 60 cápsulas (2 cápsulas/dia).',
+      features: ['60 cápsulas', 'Fórmula premium', 'Envio discreto'],
       price: 89.9,
       priceLabel: 'R$89,90',
       highlight: false,
-      cta: 'Quero Testar',
-      link: 'https://app.monetizze.com.br/checkout/ALPHA1FRASCO',
+      cta: 'Quero começar',
+      link: 'https://app.monetizze.com.br/checkout/TESTOPREMIUM1',
     },
     {
       id: 'frasco3',
       title: '3 Frascos',
-      description: 'Plano ideal para 90 dias de uso e resultados constantes.',
-      features: ['90 cápsulas', 'Desconto especial', 'Frete grátis'],
+      img: '/3frascos.png',
+      description: '90 dias de uso — 180 cápsulas (2 cápsulas/dia).',
+      features: ['180 cápsulas', 'Desconto progressivo', 'Frete grátis'],
       price: 239.7,
       priceLabel: 'R$239,70',
       highlight: false,
-      cta: 'Quero Economizar',
-      link: 'https://app.monetizze.com.br/checkout/ALPHA3FRASCOS',
+      cta: 'Quero economizar',
+      link: 'https://app.monetizze.com.br/checkout/TESTOPREMIUM3',
     },
     {
       id: 'frasco5',
-      title: '5 Frascos + Brinde Exclusivo',
-      description: 'Kit Alpha definitivo com presente surpresa e o melhor custo-benefício.',
-      features: ['150 cápsulas', 'Frete grátis', 'Brinde especial'],
+      title: '5 Frascos',
+      img: '/5frascos.png',
+      description: '150 dias de uso — 300 cápsulas (2 cápsulas/dia).',
+      features: ['300 cápsulas', 'Melhor custo-benefício', 'Frete grátis'],
       price: 349.5,
       priceLabel: 'R$349,50',
       highlight: true,
-      cta: 'Quero Potência Total',
-      link: 'https://app.monetizze.com.br/checkout/ALPHA5FRASCOS',
+      cta: 'Potência e economia total',
+      link: 'https://app.monetizze.com.br/checkout/TESTOPREMIUM5',
     },
   ],
 
   TESTIMONIALS: [
     {
       name: 'Carlos Henrique',
-      feedback: 'Eu me sinto outro homem. Energia, foco e desejo nas alturas. AlphaMan é top!',
+      feedback:
+        'Mais energia no trabalho e nos treinos. A rotina ficou muito mais produtiva.',
     },
     {
       name: 'João Batista',
-      feedback: 'Voltei a ter confiança na cama e no trabalho. Recomendo demais.',
+      feedback:
+        'Senti melhora consistente de disposição ao longo das semanas. Recomendo.',
     },
     {
       name: 'Renato Lopes',
-      feedback: 'Produto incrível. Resultados em menos de uma semana. Não largo mais!',
+      feedback:
+        'Prático e confiável. A rotina de 2 cápsulas funcionou muito bem para mim.',
     },
   ],
 
   FAQ: [
     {
       question: 'Quais os principais benefícios?',
-      answer: 'Energia, libido, potência sexual e foco. Tudo com ingredientes naturais e seguros.',
+      answer:
+        'Apoio à energia, disposição e vitalidade masculina. A fórmula combina ingredientes tradicionais como maca, tribulus e ginseng com zinco e vitamina B6.',
     },
     {
       question: 'Como devo tomar?',
-      answer: '1 cápsula por dia pela manhã. Em dias especiais, pode tomar 1 extra 30 minutos antes da relação.',
+      answer:
+        'Ingestão recomendada: 2 cápsulas ao dia, preferencialmente 1 pela manhã e 1 à noite, com líquido. Não exceder a recomendação diária indicada na embalagem.',
     },
     {
-      question: 'O AlphaMan é seguro?',
-      answer: 'Sim. A fórmula é 100% natural e sem efeitos colaterais. Liberado pela ANVISA.',
+      question: 'O TestoPremium é seguro?',
+      answer:
+        'É um suplemento alimentar com ingredientes de uso tradicional. Pessoas com condições específicas, gestantes e lactantes devem consultar profissional de saúde antes do uso.',
     },
     {
-      question: 'Tem garantia?',
-      answer: 'Garantia de 7 dias. Se não gostar, devolvemos seu dinheiro sem perguntas.',
+      question: 'Em quanto tempo percebo resultados?',
+      answer:
+        'Os efeitos são cumulativos. Muitos usuários relatam melhora de energia e disposição nas primeiras semanas, com evolução ao longo do uso contínuo.',
+    },
+    {
+      question: 'Posso usar com outros suplementos?',
+      answer:
+        'Em geral, pode ser associado a multivitamínicos. Para uso com pré-treinos, estimulantes ou medicamentos, consulte um profissional de saúde.',
     },
     {
       question: 'O envio é discreto?',
-      answer: 'Sim! Enviamos em embalagem neutra e protegida. Ninguém saberá o conteúdo.',
+      answer:
+        'Sim. Utilizamos embalagem neutra e protegida, sem identificação do conteúdo no lado externo.',
     },
   ],
 
-  GUARANTEE_TEXT: 'Use AlphaMan por 7 dias. Se não perceber mudança, devolvemos todo o valor. Garantia total de satisfação.',
- PRIVACY_POLICY: {
+  GUARANTEE_TEXT:
+    'Experimente TestoPremium por 7 dias. Se não ficar satisfeito com sua experiência, reembolsamos 100% do valor conforme a nossa política de reembolso.',
+
+  PRIVACY_POLICY: {
     lastUpdated: '18 de Junho de 2025',
     title: 'Política de Privacidade',
-    intro: `A sua privacidade é importante para nós. Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações dos usuários do site/app ${_productName}, especializado na venda de suplementos encapsulados e géis vitamínicos. Ao realizar compras, você concorda com as práticas descritas neste documento.`,
+    intro: `A sua privacidade é importante para nós. Esta Política descreve como coletamos, usamos e protegemos as informações dos usuários do site/app ${_productName}, especializado na venda de suplementos alimentares. Ao realizar compras, você concorda com as práticas descritas neste documento.`,
     sections: [
       {
         title: '1. Coleta de informações',
-        content: `Coletamos dados fornecidos por você ao criar conta ou realizar pedidos: nome, e-mail, CPF/CNPJ, endereço de entrega, telefone e dados de pagamento.`,
+        content:
+          'Coletamos dados fornecidos por você ao criar conta ou realizar pedidos: nome, e-mail, CPF/CNPJ, endereço de entrega, telefone e dados de pagamento.',
       },
       {
         title: '2. Dados coletados automaticamente',
-        content: `Podemos coletar dados técnicos de uso, como tipo de dispositivo, sistema operacional, histórico de navegação em nosso site e registros de erros, para melhorar a experiência e a segurança. Não acessamos dados sensíveis ou privados de seu dispositivo.`,
+        content:
+          'Podemos coletar dados técnicos de uso, como tipo de dispositivo, sistema operacional, páginas visitadas e registros de erros, para melhorar a experiência e a segurança.',
       },
       {
         title: '3. Uso das informações',
         list: [
-          'Processamento e entrega de pedidos de cápsulas e géis;',
+          'Processamento e entrega de pedidos;',
           'Confirmação de pagamento e envio de faturas;',
-          'Comunicações sobre status de pedido e suporte ao cliente;',
+          'Comunicações sobre status de pedido e suporte;',
           'Melhoria do site/app e prevenção a fraudes.',
         ],
       },
       {
         title: '4. Compartilhamento de dados',
-        content: `Compartilhamos seus dados apenas com transportadoras, gateways de pagamento e provedores de hospedagem necessários para processar seus pedidos. Não vendemos nem divulgamos seus dados a terceiros para marketing sem sua permissão.`,
+        content:
+          'Compartilhamos seus dados apenas com transportadoras, gateways de pagamento e provedores de hospedagem necessários para processar seus pedidos. Não vendemos seus dados a terceiros para marketing.',
       },
       {
         title: '5. Segurança dos dados',
-        content: `Adotamos medidas técnicas e administrativas para proteger seus dados contra acessos não autorizados. Entretanto, nenhuma transmissão online é 100% segura.`,
+        content:
+          'Adotamos medidas técnicas e administrativas para proteger seus dados contra acessos não autorizados. Nenhuma transmissão online é 100% segura.',
       },
       {
         title: '6. Seus direitos',
@@ -274,7 +302,8 @@ export const envVariables = {
       },
       {
         title: '7. Alterações nesta política',
-        content: `Esta política pode ser atualizada a qualquer momento. A data de revisão será atualizada na parte superior desta página.`,
+        content:
+          'Esta política pode ser atualizada a qualquer momento. A data de revisão será atualizada na parte superior desta página.',
       },
       {
         title: '8. Contato',
@@ -282,42 +311,51 @@ export const envVariables = {
       },
     ],
   },
+
   TERMS_AND_CONDITIONS: {
     lastUpdated: '18 de Junho de 2025',
     title: 'Termos e Condições de Uso',
-    intro: `Estes termos regem seu uso do site, que é uma plataforma de venda de suplementos encapsulados e géis vitamínicos. Ao realizar compras, você concorda com estes Termos.`,
+    intro:
+      'Estes termos regem seu uso do site, uma plataforma de venda de suplementos alimentares. Ao realizar compras, você concorda com estes Termos.',
     sections: [
       {
         title: '1. Cadastro e Conta',
-        content: `Para comprar, é necessário criar uma conta com dados verdadeiros. Você é responsável por manter a confidencialidade de sua senha.`,
+        content:
+          'Para comprar, é necessário criar uma conta com dados verdadeiros. Você é responsável por manter a confidencialidade de sua senha.',
       },
       {
         title: '2. Produtos e Pedidos',
-        content: `Oferecemos cápsulas e géis de vitaminas e suplementos. As descrições e imagens são ilustrativas. Reservamo-nos o direito de alterar preços e composição dos produtos a qualquer momento.`,
+        content:
+          'Oferecemos cápsulas de suplementos. As descrições e imagens são ilustrativas e podem variar. Reservamo-nos o direito de alterar preços e composição dos produtos a qualquer momento.',
       },
       {
         title: '3. Preços e Pagamento',
-        content: `Os valores são exibidos em reais (BRL) já com impostos. O pagamento é processado por terceiros (Stripe) e sujeito às políticas de cada meio (cartão, boleto, pix).`,
+        content:
+          'Valores exibidos em reais (BRL). O pagamento é processado por gateway de terceiros e está sujeito às políticas do meio escolhido (cartão, boleto, pix).',
       },
       {
         title: '4. Entrega e Devolução',
-        content: `O prazo de entrega varia conforme endereço. Produtos devem ser conferidos no recebimento. Para troca ou devolução, consulte nossa política de reembolso de 7 dias em nossa seção de suporte.`,
+        content:
+          'O prazo de entrega varia conforme o endereço. Produtos devem ser conferidos no recebimento. Para troca ou devolução, consulte nossa política de reembolso de 7 dias.',
       },
       {
         title: '5. Garantia de Satisfação',
-        content: `Oferecemos garantia de 7 dias para insatisfação de compra. Para reembolso, entre em contato pelo e-mail: ${_emailSupport}.`,
+        content: `Oferecemos garantia de 7 dias. Para solicitar reembolso, entre em contato pelo e-mail: ${_emailSupport}.`,
       },
       {
         title: '6. Propriedade Intelectual',
-        content: `Todo conteúdo do site/app é protegido por direitos autorais e marca registrada.`,
+        content:
+          'Todo conteúdo do site/app é protegido por direitos autorais e marca registrada.',
       },
       {
         title: '7. Limitação de Responsabilidade',
-        content: `Não nos responsabilizamos por danos indiretos, lucros cessantes ou perdas decorrentes do uso ou impossibilidade de uso dos produtos.`,
+        content:
+          'Não nos responsabilizamos por danos indiretos, lucros cessantes ou perdas decorrentes do uso ou impossibilidade de uso dos produtos.',
       },
       {
         title: '8. Alterações nos Termos',
-        content: `Reservamo-nos o direito de atualizar estes Termos a qualquer momento. A data de revisão será alterada no topo desta página.`,
+        content:
+          'Reservamo-nos o direito de atualizar estes Termos a qualquer momento. A data de revisão será alterada no topo desta página.',
       },
       {
         title: '9. Contato',
@@ -325,12 +363,17 @@ export const envVariables = {
       },
     ],
   },
+
   KEYWORDS: [
     'encapsulados',
     _productName,
     'suplemento masculino',
-    'potência sexual',
-    'testosterona natural',
-    'produto para libido',
+    'vitalidade masculina',
+    'energia e disposição',
+    'zinco e vitamina B6',
+    'maca peruana',
+    'tribulus terrestris',
+    'ginseng',
+    'L-arginina',
   ],
 }
