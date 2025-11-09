@@ -22,14 +22,15 @@ export const envVariables = {
   PRIMARY_COLOR_LIGHT: '#b22222',
   PRIMARY_COLOR_MEDIUM: '#a50000',
   PRIMARY_COLOR_DARK: '#8b0000',
-  PRIMARY_COLOR_ULTRA_DARK: '#4b0000' ,
+  PRIMARY_COLOR_ULTRA_DARK: '#4b0000',
 
   SECONDARY_COLOR_LIGHT: '#e0b64a',
   SECONDARY_COLOR_MEDIUM: '#c8a24b',
   SECONDARY_COLOR_DARK: '#3a3a3a',
 
   PRODUCT_NAME: _productName,
-  PRODUCT_DESCRIPTION: 'Tesão de Touro - Potência, vitalidade e desejo sem limites.',
+  PRODUCT_DESCRIPTION:
+    'Tesão de Touro - Potência, vitalidade e desejo sem limites.',
 
   PHONE_SUPPORT: '',
   SOCIAL_WHATSAPP: '37988083717',
@@ -57,7 +58,8 @@ export const envVariables = {
 
   HERO: {
     title: 'Desperte Sua Potência com Tesão de Touro',
-    subtitle: 'Suplementos de alta performance que elevam sua energia, confiança e desempenho em todos os momentos. Resultados reais e visíveis em até 7 dias ou seu dinheiro de volta.',
+    subtitle:
+      'Suplementos de alta performance que elevam sua energia, confiança e desempenho em todos os momentos. Resultados reais e visíveis em até 7 dias ou seu dinheiro de volta.',
     buttonLabel: 'Quero Potência Máxima',
     buttonLink: '/#pricing',
     images: [
@@ -68,15 +70,15 @@ export const envVariables = {
         height: 400,
       },
       {
-        src: '/logo.jpg',
+        src: '/logo.png',
         alt: 'Produto Tesão de Touro',
         width: 400,
         height: 400,
       },
-    ]
+    ],
   },
 
-   HIGHLIGHTS: [
+  HIGHLIGHTS: [
     {
       icon: TruckIcon,
       title: 'Entregamos',
@@ -119,7 +121,8 @@ export const envVariables = {
   },
   VIDEO_SECTION: {
     title: `Descubra como o ${_productName} transforma sua vida`,
-    subtitle: 'Assista ao vídeo completo e veja os benefícios reais para energia, libido e desempenho.',
+    subtitle:
+      'Assista ao vídeo completo e veja os benefícios reais para energia, libido e desempenho.',
     youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // vídeo temporário
   },
   FEATURES: [
@@ -178,8 +181,13 @@ export const envVariables = {
       id: 'frasco1',
       priceId: 'price_1OXiCyKEXAMPLE',
       title: '1 Frasco',
-      description: 'Comece sua transformação. Ideal para quem quer experimentar o poder do Tesão de Touro.',
-      features: ['30 cápsulas premium', 'Fórmula concentrada', 'Envio ultra-rápido e discreto'],
+      description:
+        'Comece sua transformação. Ideal para quem quer experimentar o poder do Tesão de Touro.',
+      features: [
+        '30 cápsulas premium',
+        'Fórmula concentrada',
+        'Envio ultra-rápido e discreto',
+      ],
       price: 89.9,
       priceLabel: 'R$89,90',
       highlight: false,
@@ -190,8 +198,13 @@ export const envVariables = {
       id: 'frasco3',
       priceId: 'price_1OXiCyKEXAMPLE',
       title: '3 Frascos',
-      description: 'A escolha inteligente para uso contínuo com ótimo custo-benefício.',
-      features: ['90 cápsulas no total', 'Desconto progressivo', 'Frete grátis'],
+      description:
+        'A escolha inteligente para uso contínuo com ótimo custo-benefício.',
+      features: [
+        '90 cápsulas no total',
+        'Desconto progressivo',
+        'Frete grátis',
+      ],
       price: 239.7,
       priceLabel: 'R$239,70',
       highlight: false,
@@ -202,8 +215,13 @@ export const envVariables = {
       id: 'frasco5',
       priceId: 'price_1OXiCyKEXAMPLE',
       title: '5 Frascos + Brinde Exclusivo',
-      description: 'Tratamento completo para resultados máximos com bônus especial incluso.',
-      features: ['150 cápsulas', 'Brinde surpresa', 'Maior desconto e frete grátis'],
+      description:
+        'Tratamento completo para resultados máximos com bônus especial incluso.',
+      features: [
+        '150 cápsulas',
+        'Brinde surpresa',
+        'Maior desconto e frete grátis',
+      ],
       price: 349.5,
       priceLabel: 'R$349,50',
       highlight: true,
@@ -347,8 +365,5 @@ export const envVariables = {
       },
     ],
   },
-  KEYWORDS: [
-    'encapsulados',
-    _productName,
-  ]
+  KEYWORDS: ['encapsulados', _productName],
 }
