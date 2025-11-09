@@ -9,6 +9,7 @@ import MotivationalBanner from './components/MotivationalBanner'
 // import VideoSection from './components/VideoSection'
 import Divisor from './components/Divisor'
 import TrustBar from './components/TrustBar'
+import FormulaSection from './components/FormulaSection'
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
         </section>
         <section id="stats">
           <Stats />
+        </section>
+        <section id="formula">
+          <FormulaSection />
         </section>
         <section id="banner">
           <MotivationalBanner />
