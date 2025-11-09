@@ -6,21 +6,23 @@ import Guarantee from './components/Guarantee'
 import Stats from './components/Stats'
 import PricingProduct from './components/PricingProduct'
 import MotivationalBanner from './components/MotivationalBanner'
-import VideoSection from './components/VideoSection'
+// import VideoSection from './components/VideoSection'
 import Divisor from './components/Divisor'
+import TrustBar from './components/TrustBar'
 
 export default function Home() {
   return (
     <>
-      <main className="text-white pt-20">
+      <main className="text-white pt-6">
         {' '}
         {/* add padding to offset fixed header */}
         <Hero />
-        <VideoSection />
+        {/* <VideoSection /> */}
+        <TrustBar />
         <section id="benefits">
           <Features />
         </section>
-        <Divisor inverse/>
+        <Divisor inverse />
         <Testimonials />
         <Divisor />
         <section id="pricing">
@@ -34,9 +36,11 @@ export default function Home() {
         </section>
         {/* <section id="contact">
           <Contact />
-        </section> */}
+          </section> */}
         <Guarantee />
-        <FAQ />
+        <section id="faq">
+          <FAQ />
+        </section>
       </main>
     </>
   )

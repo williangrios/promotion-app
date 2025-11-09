@@ -15,23 +15,23 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <Logo />
           <h3
-              className="text-lg font-extrabold select-none"
-              style={{
-                background: `linear-gradient(45deg, ${envVariables.SECONDARY_COLOR_LIGHT}, ${envVariables.SECONDARY_COLOR_MEDIUM}, ${envVariables.SECONDARY_COLOR_DARK})`,
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                // Removi text-shadow que borrava
-                // Mantive uma sombra sutil mas mais definida com drop-shadow menor e menos blur
-                filter: `
+            className="text-lg font-extrabold select-none"
+            style={{
+              background: `linear-gradient(45deg, ${envVariables.SECONDARY_COLOR_LIGHT}, ${envVariables.SECONDARY_COLOR_MEDIUM}, ${envVariables.SECONDARY_COLOR_DARK})`,
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              // Removi text-shadow que borrava
+              // Mantive uma sombra sutil mas mais definida com drop-shadow menor e menos blur
+              filter: `
                   drop-shadow(0 0 1px rgba(0, 0, 0, 0.5))
                 `,
-                // Aumentar contraste com font-weight extra bold (já está) e um leve outline com text stroke
-                // textStroke: `1px ${envVariables.SECONDARY_COLOR_DARK}`, // só funciona no Firefox, pra outros pode usar -webkit-text-stroke
-                WebkitTextStroke: `0.8px ${envVariables.SECONDARY_COLOR_DARK}`,
-              }}
-            >
-              ALPHAMAN
-            </h3>
+              // Aumentar contraste com font-weight extra bold (já está) e um leve outline com text stroke
+              // textStroke: `1px ${envVariables.SECONDARY_COLOR_DARK}`, // só funciona no Firefox, pra outros pode usar -webkit-text-stroke
+              WebkitTextStroke: `0.8px ${envVariables.SECONDARY_COLOR_DARK}`,
+            }}
+          >
+            TESTOPREMIUM
+          </h3>
           <div className="flex gap-4 mt-4">
             {envVariables.SOCIAL_YOUTUBE && (
               <DefaultLink
@@ -55,7 +55,9 @@ export default function Footer() {
               </DefaultLink>
             )}
             {envVariables.SOCIAL_WHATSAPP && (
-              <DefaultLink href={`https://wa.me/${envVariables.SOCIAL_WHATSAPP}`}>
+              <DefaultLink
+                href={`https://wa.me/${envVariables.SOCIAL_WHATSAPP}`}
+              >
                 <FaWhatsapp size={20} />
               </DefaultLink>
             )}
@@ -64,7 +66,10 @@ export default function Footer() {
 
         {/* Navegação */}
         <div>
-          <h3 className="text-sm font-semibold mb-4 uppercase" style={{ color: envVariables.SECONDARY_COLOR_LIGHT }}>
+          <h3
+            className="text-sm font-semibold mb-4 uppercase"
+            style={{ color: envVariables.SECONDARY_COLOR_LIGHT }}
+          >
             Produto
           </h3>
           <ul className="space-y-2 text-sm text-white/90">
@@ -78,21 +83,31 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold mb-4 uppercase" style={{ color: envVariables.SECONDARY_COLOR_LIGHT }}>
+          <h3
+            className="text-sm font-semibold mb-4 uppercase"
+            style={{ color: envVariables.SECONDARY_COLOR_LIGHT }}
+          >
             Empresa
           </h3>
           <ul className="space-y-2 text-sm text-white/90">
             <li>
-              <DefaultLink href="/privacy-policy">Política de Privacidade</DefaultLink>
+              <DefaultLink href="/privacy-policy">
+                Política de Privacidade
+              </DefaultLink>
             </li>
             <li>
-              <DefaultLink href="/terms-and-conditions">Termos de Uso</DefaultLink>
+              <DefaultLink href="/terms-and-conditions">
+                Termos de Uso
+              </DefaultLink>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold mb-4 uppercase" style={{ color: envVariables.SECONDARY_COLOR_LIGHT }}>
+          <h3
+            className="text-sm font-semibold mb-4 uppercase"
+            style={{ color: envVariables.SECONDARY_COLOR_LIGHT }}
+          >
             Suporte
           </h3>
           <ul className="space-y-2 text-sm text-white/90">
@@ -104,11 +119,11 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-        <MiniPaymentFooter />
+      <MiniPaymentFooter />
       <div className="text-center text-xs mt-10 text-white/70">
         <p>
-          &copy; {new Date().getFullYear()} {envVariables.PRODUCT_NAME}. Todos os
-          direitos reservados.
+          &copy; {new Date().getFullYear()} {envVariables.PRODUCT_NAME}. Todos
+          os direitos reservados.
         </p>
         <p className="mt-1">
           Transformando saúde e bem-estar com inovação em cápsulas e géis.

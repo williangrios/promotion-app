@@ -5,7 +5,13 @@ import Link from 'next/link'
 import { envVariables } from '@/helpers/envVariables'
 
 export default function MotivationalBanner() {
-  const { MOTIVATIONAL_BANNER, SECONDARY_COLOR_MEDIUM, SECONDARY_COLOR_DARK, PRIMARY_COLOR_DARK, PRIMARY_COLOR_ULTRA_DARK } = envVariables
+  const {
+    MOTIVATIONAL_BANNER,
+    SECONDARY_COLOR_MEDIUM,
+    SECONDARY_COLOR_DARK,
+    PRIMARY_COLOR_DARK,
+    PRIMARY_COLOR_ULTRA_DARK,
+  } = envVariables
 
   return (
     <section
@@ -23,14 +29,31 @@ export default function MotivationalBanner() {
             backgroundColor: PRIMARY_COLOR_ULTRA_DARK,
           }}
         >
-          <div className="relative z-10 rounded-md overflow-hidden">
-            <Image
-              src={MOTIVATIONAL_BANNER.image.src}
-              alt={MOTIVATIONAL_BANNER.image.alt}
-              width={300}
-              height={300}
-              className="drop-shadow-2xl rounded-md"
-            />
+          <div className="relative group">
+            {/* Brilho de fundo animado */}
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/30 to-orange-500/30 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            {/* Container da imagem */}
+            <div className="relative bg-gray-900 rounded-xl overflow-hidden">
+              <Image
+                src={MOTIVATIONAL_BANNER.image.src}
+                alt={MOTIVATIONAL_BANNER.image.alt}
+                width={500}
+                height={500}
+                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              />
+
+              {/* Overlay gradient sutil */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+
+              {/* Badge decorativo (opcional) */}
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg animate-pulse">
+                ✓ Comprovado
+              </div>
+            </div>
+
+            {/* Reflexo inferior */}
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-yellow-400/20 rounded-full blur-xl"></div>
           </div>
         </div>
 

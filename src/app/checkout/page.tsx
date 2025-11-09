@@ -28,7 +28,7 @@ export default function CheckoutPage() {
       const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId: selectedProduct.priceId }),
+        body: JSON.stringify({ priceId: selectedProduct.price }),
       })
       const { sessionId } = await res.json()
       if (sessionId) {
@@ -55,7 +55,10 @@ export default function CheckoutPage() {
   }
 
   return (
-    <section className="min-h-screen mt-20 text-white flex flex-col w-full items-center justify-center py-6" style={{ backgroundColor: envVariables.SECONDARY_COLOR_MEDIUM }}>
+    <section
+      className="min-h-screen mt-20 text-white flex flex-col w-full items-center justify-center py-6"
+      style={{ backgroundColor: envVariables.SECONDARY_COLOR_MEDIUM }}
+    >
       <div className="w-full max-w-2xl bg-white text-gray-900 rounded-xl shadow-xl p-8">
         <h1 className="text-3xl font-bold text-center mb-4">
           Adquira seu {selectedProduct.title}
