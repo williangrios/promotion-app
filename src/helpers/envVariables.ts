@@ -180,7 +180,7 @@ export const envVariables = {
       priceLabel: 'R$89,90',
       highlight: false,
       cta: 'Quero começar',
-      link: 'https://app.monetizze.com.br/checkout/TESTOPREMIUM1',
+      link: 'https://app.monetizze.com.br/checkout/DFU351502',
     },
     {
       id: 'frasco3',
@@ -192,7 +192,7 @@ export const envVariables = {
       priceLabel: 'R$239,70',
       highlight: false,
       cta: 'Quero economizar',
-      link: 'https://app.monetizze.com.br/checkout/TESTOPREMIUM3',
+      link: 'https://app.monetizze.com.br/checkout/DUB364513',
     },
     {
       id: 'frasco5',
@@ -204,7 +204,7 @@ export const envVariables = {
       priceLabel: 'R$349,50',
       highlight: true,
       cta: 'Potência e economia total',
-      link: 'https://app.monetizze.com.br/checkout/TESTOPREMIUM5',
+      link: 'https://app.monetizze.com.br/checkout/DUV364515',
     },
   ],
 
