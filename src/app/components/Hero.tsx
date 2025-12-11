@@ -168,7 +168,7 @@ export default function Hero() {
 
               {/* Container da imagem */}
               <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px]">
-                {/* Badge flutuante */}
+                {/* Badge flutuante
                 <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold px-4 py-2 rounded-full shadow-2xl z-20 animate-bounce">
                   <div className="flex items-center gap-2">
                     <span className="text-2xl">✓</span>
@@ -179,8 +179,7 @@ export default function Hero() {
                       <div className="text-sm">ANVISA</div>
                     </div>
                   </div>
-                </div>
-
+                </div> */}
                 {/* Imagens rotativas */}
                 <div className="relative w-full h-full rounded-3xl overflow-hidden">
                   {images.map((img, index) => (
@@ -203,7 +202,6 @@ export default function Hero() {
                     </div>
                   ))}
                 </div>
-
                 {/* Indicadores de slides */}
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
                   {images.map((_, index) => (

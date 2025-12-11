@@ -26,7 +26,7 @@ export default function Banner() {
           WebkitTextStroke: `0.8px ${envVariables.SECONDARY_COLOR_DARK}`,
         }}
       >
-        TESTOPREMIUM
+        {envVariables.PRODUCT_NAME}
       </h1>
     </Link>
   )

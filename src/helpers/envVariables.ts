@@ -1,45 +1,38 @@
 import {
   SparklesIcon,
-  ChartBarIcon,
-  UserGroupIcon,
-  AcademicCapIcon,
-  BoltIcon,
+  TagIcon,
+  BellIcon,
   FireIcon,
-  ShieldCheckIcon,
+  ShoppingBagIcon,
   TruckIcon,
-  CreditCardIcon,
-  LockClosedIcon,
 } from '@heroicons/react/24/outline'
-import { BiPackage } from 'react-icons/bi'
-import { MdNature } from 'react-icons/md'
 
-const _emailSupport = 'suporte@testopremium.com.br'
-const _productName = 'TestoPremium'
+const _emailSupport = 'contato@promora.app'
+const _productName = 'Promora'
 
 export const envVariables = {
-  SITE_URL: 'www.testopremium.com.br',
+  SITE_URL: 'promora.vercel.app',
 
-  // Paleta alinhada aos frascos: azul profundo + dourado premium
-  PRIMARY_COLOR_LIGHT: '#1E2A39',
-  PRIMARY_COLOR_MEDIUM: '#16202B',
-  PRIMARY_COLOR_DARK: '#0F1520',
-  PRIMARY_COLOR_ULTRA_DARK: '#0A0F18',
+  PRIMARY_COLOR_LIGHT: '#7C3AED',
+  PRIMARY_COLOR_MEDIUM: '#6D28D9',
+  PRIMARY_COLOR_DARK: '#5B21B6',
+  PRIMARY_COLOR_ULTRA_DARK: '#4C1D95',
 
-  SECONDARY_COLOR_LIGHT: '#E6C766',
-  SECONDARY_COLOR_MEDIUM: '#C9A938',
-  SECONDARY_COLOR_DARK: '#8A7420',
+  SECONDARY_COLOR_LIGHT: '#F59E0B',
+  SECONDARY_COLOR_MEDIUM: '#D97706',
+  SECONDARY_COLOR_DARK: '#B45309',
 
   PRODUCT_NAME: _productName,
   PRODUCT_DESCRIPTION:
-    'TestoPremium — suplemento masculino premium para apoio à energia, disposição e vitalidade. Rotina simples: 2 cápsulas ao dia.',
+    'Promora — As melhores promoções e ofertas do Brasil reunidas em um único app.',
 
   PHONE_SUPPORT: '',
-  SOCIAL_WHATSAPP: '37988083717',
+  SOCIAL_WHATSAPP: '',
 
   EMAIL_HOST: 'smtp.gmail.com',
   EMAIL_PORT: '587',
   EMAIL_USER: _emailSupport,
-  EMAIL_PASS: 'senha_segura_aqui',
+  EMAIL_PASS: '',
   EMAIL_SUPPORT: _emailSupport,
 
   SOCIAL_YOUTUBE: '',
@@ -47,34 +40,26 @@ export const envVariables = {
   SOCIAL_FACEBOOK: '',
 
   NAV_ITEMS: [
-    { name: 'Home', href: '/' },
-    { name: 'Benefícios', href: '/#benefits' },
-    { name: 'Fórumla', href: '/#formula' },
+    { name: 'Recursos', href: '/#features' },
+    { name: 'Como Funciona', href: '/#how-it-works' },
   ],
 
-  // Cabeçalho coerente com o azul/dourado
-  HEADER_BG_COLOR: '#0F1520',
+  HEADER_BG_COLOR: '#4C1D95',
   HEADER_TEXT_COLOR: '#FFFFFF',
-  HEADER_HOVER_COLOR: '#E6C766',
-  HEADER_BORDER_COLOR: 'rgba(255,255,255,0.08)',
+  HEADER_HOVER_COLOR: '#F59E0B',
+  HEADER_BORDER_COLOR: 'rgba(255,255,255,0.1)',
   LOGO_IMAGE: '/logo.png',
 
   HERO: {
-    title: 'Potência premium para o seu dia a dia',
+    title: 'As Melhores Promoções do Brasil',
     subtitle:
-      'Mais energia, foco e vitalidade com uma combinação de ingredientes selecionados. TestoPremium é prático: 2 cápsulas ao dia.',
-    buttonLabel: 'Quero o meu TestoPremium',
-    buttonLink: '/#pricing',
+      'Todas as ofertas e descontos imperdíveis reunidos em um único app. Economize tempo e dinheiro com alertas inteligentes de promoções.',
+    buttonLabel: 'Baixar na Play Store',
+    buttonLink: '#download',
     images: [
       {
-        src: '/imghero1.png',
-        alt: 'TestoPremium',
-        width: 500,
-        height: 500,
-      },
-      {
-        src: '/imghero2.png',
-        alt: 'Frasco do TestoPremium',
+        src: '/app-mockup.png',
+        alt: 'App Promora',
         width: 400,
         height: 400,
       },
@@ -83,297 +68,212 @@ export const envVariables = {
 
   HIGHLIGHTS: [
     {
+      icon: BellIcon,
+      title: 'Alertas Instantâneos',
+      subtitle: 'Notificações em tempo real',
+    },
+    {
+      icon: TagIcon,
+      title: 'Ofertas Verificadas',
+      subtitle: 'Só promoções reais',
+    },
+    {
+      icon: ShoppingBagIcon,
+      title: 'Todas as Lojas',
+      subtitle: 'Amazon, Magalu e mais',
+    },
+    {
       icon: TruckIcon,
-      title: 'Envio rápido e discreto',
-      subtitle: 'Para todo o Brasil',
-    },
-    {
-      icon: CreditCardIcon,
-      title: 'Parcelamento seguro',
-      subtitle: 'em até 12x no cartão',
-    },
-    {
-      icon: BiPackage,
-      title: 'Frete grátis',
-      subtitle: 'em pedidos selecionados',
-    },
-    {
-      icon: LockClosedIcon,
-      title: 'Checkout blindado',
-      subtitle: 'Ambiente 100% protegido',
+      title: '100% Gratuito',
+      subtitle: 'Sem mensalidades',
     },
   ],
 
   MOTIVATIONAL_BANNER: {
-    title: 'Alta performance nasce de uma boa rotina.',
+    title: 'Economize sem esforço. Ganhe tempo e dinheiro.',
     paragraphs: [
-      'Energia e disposição para o trabalho, treinos e vida a dois — em uma fórmula premium com maca peruana, tribulus, ginseng, L-arginina, zinco e vitamina B6.',
-      'Posologia simples e constante: 2 cápsulas ao dia para efeito cumulativo. Fácil de inserir na rotina e manter resultados.',
-      'Qualidade e transparência em cada frasco. Design e experiência pensados para o homem que exige mais de si mesmo.',
+      'O Promora reúne as melhores ofertas de eletrônicos, moda, casa, games e muito mais.',
+      'Receba notificações personalizadas de acordo com suas categorias favoritas.',
+      'Simples, rápido e 100% gratuito. Baixe agora e comece a economizar.',
     ],
     cta: {
-      label: 'COMPRAR AGORA',
-      link: '/#pricing',
+      label: 'BAIXAR AGORA',
+      link: '#download',
     },
     image: {
-      src: '/testochart.png',
-      alt: `testosterona chart`,
+      src: '/promo-banner.png',
+      alt: 'Promoções do Promora',
       width: 450,
       height: 450,
     },
   },
 
   VIDEO_SECTION: {
-    title: `Veja o ${_productName} em ação`,
+    title: 'Veja o Promora em ação',
     subtitle:
-      'Como a rotina de 2 cápsulas ao dia pode apoiar sua energia, foco e vitalidade.',
+      'Descubra como é fácil encontrar e aproveitar as melhores promoções.',
     youtubeUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
 
   FEATURES: [
     {
-      title: 'Energia e disposição',
-      desc: 'Sinta-se preparado para o dia com uma combinação de ingredientes selecionados.',
-      icon: BoltIcon,
+      title: 'Notificações Inteligentes',
+      desc: 'Receba alertas apenas das promoções que realmente interessam.',
+      icon: BellIcon,
     },
     {
-      title: 'Vitalidade masculina',
-      desc: 'Apoio nutricional pensado para a rotina do homem moderno.',
+      title: 'Ofertas em Tempo Real',
+      desc: 'Promoções atualizadas a cada minuto de milhares de lojas.',
       icon: FireIcon,
     },
     {
-      title: 'Confiança no desempenho',
-      desc: 'L-arginina e extratos tradicionais para suporte ao fluxo e à resistência.',
-      icon: ShieldCheckIcon,
+      title: 'Categorias Personalizadas',
+      desc: 'Escolha suas categorias favoritas: eletrônicos, moda, games e mais.',
+      icon: TagIcon,
     },
     {
-      title: 'Ativos de origem natural',
-      desc: 'Maca peruana, tribulus terrestris, panax ginseng, muira puama, gengibre, zinco e vitamina B6.',
-      icon: MdNature,
+      title: 'Links Diretos',
+      desc: 'Acesse ofertas diretamente nas lojas com um clique.',
+      icon: ShoppingBagIcon,
     },
     {
-      title: 'Uso prático',
-      desc: '2 cápsulas ao dia — rotina simples, efeito cumulativo.',
+      title: 'Interface Simples',
+      desc: 'Design limpo e intuitivo para encontrar promoções rapidamente.',
       icon: SparklesIcon,
     },
     {
-      title: 'Aprovado pelos clientes',
-      desc: 'Alta aceitação e recompra entre usuários.',
-      icon: UserGroupIcon,
+      title: 'Sem Cadastro Obrigatório',
+      desc: 'Navegue e veja ofertas sem precisar criar conta.',
+      icon: TruckIcon,
     },
   ],
 
   STATS: [
-    { value: '10.000+', label: 'Clientes atendidos', icon: UserGroupIcon },
-    { value: '25.000+', label: 'Frascos vendidos', icon: ChartBarIcon },
-    { value: '97%', label: 'Satisfação geral', icon: AcademicCapIcon },
+    { value: 'Em breve', label: 'Usuários Ativos', icon: SparklesIcon },
+    { value: 'Em breve', label: 'Promoções Diárias', icon: TagIcon },
+    { value: '100%', label: 'Gratuito', icon: FireIcon },
   ],
 
-  PRODUCTS: [
-    {
-      id: 'frasco1',
-      title: '1 Frasco',
-      img: '/1frasco.png',
-      description: '30 dias de uso — 60 cápsulas (2 cápsulas/dia).',
-      features: ['60 cápsulas', 'Fórmula premium', 'Envio discreto'],
-      price: 89.9,
-      priceLabel: 'R$89,90',
-      highlight: false,
-      cta: 'Quero começar',
-      link: 'https://app.monetizze.com.br/checkout/DFU351502',
-    },
-    {
-      id: 'frasco3',
-      title: '3 Frascos',
-      img: '/3frascos.png',
-      description: '90 dias de uso — 180 cápsulas (2 cápsulas/dia).',
-      features: ['180 cápsulas', 'Desconto progressivo', 'Frete grátis'],
-      price: 239.7,
-      priceLabel: 'R$239,70',
-      highlight: false,
-      cta: 'Quero economizar',
-      link: 'https://app.monetizze.com.br/checkout/DUB364513',
-    },
-    {
-      id: 'frasco5',
-      title: '5 Frascos',
-      img: '/5frascos.png',
-      description: '150 dias de uso — 300 cápsulas (2 cápsulas/dia).',
-      features: ['300 cápsulas', 'Melhor custo-benefício', 'Frete grátis'],
-      price: 349.5,
-      priceLabel: 'R$349,50',
-      highlight: true,
-      cta: 'Potência e economia total',
-      link: 'https://app.monetizze.com.br/checkout/DUV364515',
-    },
-  ],
+  PRODUCTS: [],
 
   TESTIMONIALS: [
     {
-      name: 'Carlos Henrique',
-      feedback:
-        'Mais energia no trabalho e nos treinos. A rotina ficou muito mais produtiva.',
-    },
-    {
-      name: 'João Batista',
-      feedback:
-        'Senti melhora consistente de disposição ao longo das semanas. Recomendo.',
-    },
-    {
-      name: 'Renato Lopes',
-      feedback:
-        'Prático e confiável. A rotina de 2 cápsulas funcionou muito bem para mim.',
+      name: 'Em breve',
+      feedback: 'Aguarde o lançamento para ver depoimentos reais.',
     },
   ],
 
   FAQ: [
     {
-      question: 'Quais os principais benefícios?',
+      question: 'O Promora é gratuito?',
       answer:
-        'Apoio à energia, disposição e vitalidade masculina. A fórmula combina ingredientes tradicionais como maca, tribulus e ginseng com zinco e vitamina B6.',
+        'Sim! O app é 100% gratuito, sem mensalidades ou taxas escondidas.',
     },
     {
-      question: 'Como devo tomar?',
+      question: 'De onde vêm as promoções?',
       answer:
-        'Ingestão recomendada: 2 cápsulas ao dia, preferencialmente 1 pela manhã e 1 à noite, com líquido. Não exceder a recomendação diária indicada na embalagem.',
+        'Agregamos ofertas de grandes lojas brasileiras e canais confiáveis de promoções.',
     },
     {
-      question: 'O TestoPremium é seguro?',
+      question: 'Como funcionam os alertas?',
       answer:
-        'É um suplemento alimentar com ingredientes de uso tradicional. Pessoas com condições específicas, gestantes e lactantes devem consultar profissional de saúde antes do uso.',
+        'Você escolhe as categorias de interesse e recebe notificações quando novas promoções aparecem.',
     },
     {
-      question: 'Em quanto tempo percebo resultados?',
+      question: 'Preciso criar conta?',
       answer:
-        'Os efeitos são cumulativos. Muitos usuários relatam melhora de energia e disposição nas primeiras semanas, com evolução ao longo do uso contínuo.',
+        'Não é obrigatório para visualizar promoções, mas criar conta libera recursos exclusivos e favoritos.',
     },
     {
-      question: 'Posso usar com outros suplementos?',
-      answer:
-        'Em geral, pode ser associado a multivitamínicos. Para uso com pré-treinos, estimulantes ou medicamentos, consulte um profissional de saúde.',
-    },
-    {
-      question: 'O envio é discreto?',
-      answer:
-        'Sim. Utilizamos embalagem neutra e protegida, sem identificação do conteúdo no lado externo.',
+      question: 'Quando estará disponível?',
+      answer: 'O app será lançado em breve na Google Play Store.',
     },
   ],
 
-  GUARANTEE_TEXT:
-    'Experimente TestoPremium por 7 dias. Se não ficar satisfeito com sua experiência, reembolsamos 100% do valor conforme a nossa política de reembolso.',
+  GUARANTEE_TEXT: '',
 
   PRIVACY_POLICY: {
-    lastUpdated: '18 de Junho de 2025',
+    lastUpdated: '11 de Dezembro de 2024',
     title: 'Política de Privacidade',
-    intro: `A sua privacidade é importante para nós. Esta Política descreve como coletamos, usamos e protegemos as informações dos usuários do site/app ${_productName}, especializado na venda de suplementos alimentares. Ao realizar compras, você concorda com as práticas descritas neste documento.`,
+    intro: `A sua privacidade é importante para nós. Esta Política descreve como coletamos, usamos e protegemos as informações dos usuários do ${_productName}, um agregador de promoções e ofertas.`,
     sections: [
       {
         title: '1. Coleta de informações',
         content:
-          'Coletamos dados fornecidos por você ao criar conta ou realizar pedidos: nome, e-mail, CPF/CNPJ, endereço de entrega, telefone e dados de pagamento.',
+          'Coletamos dados fornecidos por você ao criar conta: nome, e-mail e preferências de categorias.',
       },
       {
         title: '2. Dados coletados automaticamente',
         content:
-          'Podemos coletar dados técnicos de uso, como tipo de dispositivo, sistema operacional, páginas visitadas e registros de erros, para melhorar a experiência e a segurança.',
+          'Podemos coletar dados técnicos de uso, como tipo de dispositivo, sistema operacional e preferências de navegação.',
       },
       {
         title: '3. Uso das informações',
         list: [
-          'Processamento e entrega de pedidos;',
-          'Confirmação de pagamento e envio de faturas;',
-          'Comunicações sobre status de pedido e suporte;',
-          'Melhoria do site/app e prevenção a fraudes.',
+          'Personalização de notificações;',
+          'Melhorias na experiência do usuário;',
+          'Comunicação sobre novos recursos.',
         ],
       },
       {
         title: '4. Compartilhamento de dados',
         content:
-          'Compartilhamos seus dados apenas com transportadoras, gateways de pagamento e provedores de hospedagem necessários para processar seus pedidos. Não vendemos seus dados a terceiros para marketing.',
+          'Não vendemos seus dados a terceiros. Compartilhamos apenas com parceiros necessários para funcionamento do app.',
       },
       {
-        title: '5. Segurança dos dados',
-        content:
-          'Adotamos medidas técnicas e administrativas para proteger seus dados contra acessos não autorizados. Nenhuma transmissão online é 100% segura.',
-      },
-      {
-        title: '6. Seus direitos',
+        title: '5. Seus direitos',
         content: `Você pode solicitar acesso, correção ou exclusão de seus dados pelo e-mail: ${_emailSupport}.`,
       },
       {
-        title: '7. Alterações nesta política',
-        content:
-          'Esta política pode ser atualizada a qualquer momento. A data de revisão será atualizada na parte superior desta página.',
-      },
-      {
-        title: '8. Contato',
+        title: '6. Contato',
         content: `Dúvidas sobre privacidade? Entre em contato: ${_emailSupport}`,
       },
     ],
   },
 
   TERMS_AND_CONDITIONS: {
-    lastUpdated: '18 de Junho de 2025',
+    lastUpdated: '11 de Dezembro de 2024',
     title: 'Termos e Condições de Uso',
     intro:
-      'Estes termos regem seu uso do site, uma plataforma de venda de suplementos alimentares. Ao realizar compras, você concorda com estes Termos.',
+      'Estes termos regem seu uso do Promora, um agregador de promoções. Ao usar o app, você concorda com estes Termos.',
     sections: [
       {
-        title: '1. Cadastro e Conta',
+        title: '1. Uso do Serviço',
         content:
-          'Para comprar, é necessário criar uma conta com dados verdadeiros. Você é responsável por manter a confidencialidade de sua senha.',
+          'O Promora é gratuito e fornece informações sobre promoções de terceiros. Não somos responsáveis pelas ofertas das lojas.',
       },
       {
-        title: '2. Produtos e Pedidos',
+        title: '2. Links Externos',
         content:
-          'Oferecemos cápsulas de suplementos. As descrições e imagens são ilustrativas e podem variar. Reservamo-nos o direito de alterar preços e composição dos produtos a qualquer momento.',
+          'O app contém links para lojas externas. Não nos responsabilizamos pelo conteúdo ou políticas desses sites.',
       },
       {
-        title: '3. Preços e Pagamento',
+        title: '3. Propriedade Intelectual',
         content:
-          'Valores exibidos em reais (BRL). O pagamento é processado por gateway de terceiros e está sujeito às políticas do meio escolhido (cartão, boleto, pix).',
+          'Todo conteúdo do app é protegido por direitos autorais e marca registrada.',
       },
       {
-        title: '4. Entrega e Devolução',
+        title: '4. Alterações nos Termos',
         content:
-          'O prazo de entrega varia conforme o endereço. Produtos devem ser conferidos no recebimento. Para troca ou devolução, consulte nossa política de reembolso de 7 dias.',
+          'Reservamo-nos o direito de atualizar estes Termos a qualquer momento.',
       },
       {
-        title: '5. Garantia de Satisfação',
-        content: `Oferecemos garantia de 7 dias. Para solicitar reembolso, entre em contato pelo e-mail: ${_emailSupport}.`,
-      },
-      {
-        title: '6. Propriedade Intelectual',
-        content:
-          'Todo conteúdo do site/app é protegido por direitos autorais e marca registrada.',
-      },
-      {
-        title: '7. Limitação de Responsabilidade',
-        content:
-          'Não nos responsabilizamos por danos indiretos, lucros cessantes ou perdas decorrentes do uso ou impossibilidade de uso dos produtos.',
-      },
-      {
-        title: '8. Alterações nos Termos',
-        content:
-          'Reservamo-nos o direito de atualizar estes Termos a qualquer momento. A data de revisão será alterada no topo desta página.',
-      },
-      {
-        title: '9. Contato',
-        content: `Dúvidas ou solicitações: ${_emailSupport}`,
+        title: '5. Contato',
+        content: `Dúvidas: ${_emailSupport}`,
       },
     ],
   },
 
   KEYWORDS: [
-    'encapsulados',
-    _productName,
-    'suplemento masculino',
-    'vitalidade masculina',
-    'energia e disposição',
-    'zinco e vitamina B6',
-    'maca peruana',
-    'tribulus terrestris',
-    'ginseng',
-    'L-arginina',
+    'promora',
+    'promoções',
+    'ofertas',
+    'descontos',
+    'cupons',
+    'black friday',
+    'economia',
+    'alertas de promoção',
+    'app de ofertas',
+    'melhores preços',
   ],
 }

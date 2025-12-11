@@ -30,7 +30,7 @@ export default function Footer() {
               WebkitTextStroke: `0.8px ${envVariables.SECONDARY_COLOR_DARK}`,
             }}
           >
-            TESTOPREMIUM
+            {envVariables.PRODUCT_NAME}
           </h3>
           <div className="flex gap-4 mt-4">
             {envVariables.SOCIAL_YOUTUBE && (

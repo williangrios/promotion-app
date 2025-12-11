@@ -32,16 +32,13 @@ export default function Home() {
         <section id="stats">
           <Stats />
         </section>
-        <section id="formula">
-          <FormulaSection />
-        </section>
         <section id="banner">
           <MotivationalBanner />
         </section>
         {/* <section id="contact">
           <Contact />
           </section> */}
-        <Guarantee />
+        {/* <Guarantee /> */}
         <section id="faq">
           <FAQ />
         </section>
