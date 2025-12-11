@@ -1,7 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import { envVariables } from '@/helpers/envVariables'
 import {
   CheckCircleIcon,
@@ -9,6 +7,8 @@ import {
   ShieldCheckIcon,
   StarIcon,
 } from '@heroicons/react/24/solid'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   const { title, subtitle, buttonLabel, buttonLink, images } = envVariables.HERO
